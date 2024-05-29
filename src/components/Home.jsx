@@ -13,15 +13,20 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center  h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-6xl font-bold text-white ">
+          <h2 className="text-4xl sm:text-4xl font-bold text-white ">
             Hello, I'm
           </h2>
           {/* <span >
             Shivdeep Raina
           </span> */}
           <ReactTyped
-            className="text-4xl sm:text-6xl font-bold text-blue-500 "
-            strings={["Shivdeep Raina", "Coder"]}
+            className="text-4xl sm:text-5xl font-bold text-blue-500 "
+            strings={[
+              "Shivdeep Raina",
+              "Web Developer",
+              "JavaScript Developer",
+              "JSX Developer",
+            ]}
             typeSpeed={60}
             backSpeed={60}
             backDelay={2000}
@@ -49,7 +54,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="max-w-sm pl-5">
+        <div className="max-w-sm">
           <img
             src={heroImage}
             alt="my-profile"
