@@ -2,6 +2,7 @@ import React from "react";
 import heroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { ReactTyped } from "react-typed";
 
 const Home = () => {
   return (
@@ -12,9 +13,21 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center  h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white ">
-            I'm a Web Developer
+          <h2 className="text-4xl sm:text-6xl font-bold text-white ">
+            Hello, I'm
           </h2>
+          {/* <span >
+            Shivdeep Raina
+          </span> */}
+          <ReactTyped
+            className="text-4xl sm:text-6xl font-bold text-blue-500 "
+            strings={["Shivdeep Raina", "Coder"]}
+            typeSpeed={60}
+            backSpeed={60}
+            backDelay={2000}
+            loop={true}
+          />
+
           <p className="text-gray-500 py-4 max-w-lg">
             I'm a skilled web and mobile developer specializing in React.js,
             JSX, and React Native app development. With a strong foundation in
@@ -36,11 +49,11 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="max-w-sm">
+        <div className="max-w-sm pl-5">
           <img
             src={heroImage}
             alt="my-profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-full mx-auto w-1/2 md:w-full "
           />
         </div>
       </div>

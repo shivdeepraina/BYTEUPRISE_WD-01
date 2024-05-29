@@ -24,12 +24,14 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between  w-full h-auto px-4 pt-5 text-white bg-black fixed border-b-2 border-gray-500">
+    <div className=" flex justify-between  w-full h-auto px-4 pt-5 text-white bg-black fixed border-b-2 border-gray-500">
       <div>
-        <h1 className="text-5xl font-signature ml-2">S.Raina</h1>
+        <h1 className="text-5xl font-signature ml-2">
+          <span className="text-blue-500">S.</span>Raina
+        </h1>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex pr-10">
         {links.map(({ id, link }) => (
           <li
             key={id}
