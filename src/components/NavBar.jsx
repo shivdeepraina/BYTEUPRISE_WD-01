@@ -24,7 +24,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between  w-full h-auto px-4 pt-5 text-white bg-black fixed">
+    <div className="flex justify-between  w-full h-auto px-4 pt-5 text-white bg-black fixed border-b-2 border-gray-500">
       <div>
         <h1 className="text-5xl font-signature ml-2">S.Raina</h1>
       </div>
@@ -33,9 +33,15 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-125 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-white hover:scale-125 duration-200"
           >
-            <Link to={link} smooth duration={500}>
+            <Link
+              to={link}
+              smooth
+              duration={500}
+              spy={true}
+              activeClass="text-white font-bold"
+            >
               {link}
             </Link>
           </li>
@@ -60,6 +66,8 @@ const NavBar = () => {
                 to={link}
                 smooth
                 duration={500}
+                spy={true}
+                activeClass="text-white font-bold"
               >
                 {link}
               </Link>
