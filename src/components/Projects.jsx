@@ -10,16 +10,19 @@ const Portfolio = () => {
       id: 1,
       src: foodApp,
       name: "Food Delivery App",
+      href: "https://github.com/shivdeepraina/Food-Delivery-App",
     },
     {
       id: 2,
       src: port,
       name: "Portfolio Website",
+      href: "https://github.com/shivdeepraina/BYTEUPRISE_WD-01",
     },
     {
       id: 3,
       src: todo,
       name: "Todo App",
+      href: "https://github.com/shivdeepraina/Todo-App",
     },
   ];
   return (
@@ -36,7 +39,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 justify-between ">
-          {portfolios.map(({ id, src, name }) => (
+          {portfolios.map(({ id, src, name, href }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg ">
               <img
                 src={src}
@@ -46,7 +49,9 @@ const Portfolio = () => {
               <div className="flex items-center justify-center">
                 <p className=" pl-5 py-3 m-4 w-full">{name}</p>
                 <button className="pl-5 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                  <a href={href} target="_blank">
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
