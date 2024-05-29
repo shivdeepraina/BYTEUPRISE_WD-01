@@ -52,12 +52,6 @@ const Experience = () => {
       title: "Tailwind CSS",
       style: "shadow-blue-800",
     },
-    {
-      id: 8,
-      src: wordpress,
-      title: "WordPress",
-      style: "shadow-white",
-    },
   ];
   return (
     <div

@@ -15,21 +15,21 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white ">
             I'm a Web Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum
-            cumque doloribus sed assumenda, vero temporibus quaerat, excepturi
-            quis repudiandae fugit accusamus dolore? Et possimus, obcaecati
-            voluptates molestias aliquid distinctio!
+          <p className="text-gray-500 py-4 max-w-lg">
+            I'm a skilled web and mobile developer specializing in React.js,
+            JSX, and React Native app development. With a strong foundation in
+            JavaScript, I thrive in creating dynamic and responsive user
+            interfaces, ensuring a seamless experience across platforms.
           </p>
 
           <div>
             <Link
-              to="portfolio"
+              to="projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 cursor-pointer"
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <MdKeyboardArrowRight size={25} className="ml-1" />
               </span>
