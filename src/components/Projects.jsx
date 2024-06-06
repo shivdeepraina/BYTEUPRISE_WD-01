@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       src: foodApp,
       name: "Food Delivery App",
-      href: "https://github.com/divyanshchoursiya13/FoodApp",
+      href: "https://github.com/shivdeepraina/food-delivery-app",
     },
     {
       id: 2,
